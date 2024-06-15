@@ -1,0 +1,11 @@
+*
+!.gitignore
+!fcitx5/
+!fcitx5/conf/
+!fcitx5/conf/classicui.conf
+!wezterm/
+!wezterm/*
+!yazi/
+!yazi/*
+!zsh/
+!zsh/*
