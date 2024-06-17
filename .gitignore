@@ -6,8 +6,8 @@
 !fcitx5/conf/
 !fcitx5/conf/classicui.conf
 !wezterm/
-!wezterm/*
+!wezterm/**
 !yazi/
-!yazi/*
+!yazi/**
 !zsh/
-!zsh/*
+!zsh/**

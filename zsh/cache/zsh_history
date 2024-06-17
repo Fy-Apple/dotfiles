@@ -1,0 +1,426 @@
+nvim ~/.config/zsh/fzf.zsh themes
+nvim ~/.config/zsh/fzf.zsh
+sudo shutdown -h now
+sudo apt update && sudo apt install locales
+sudo locale-gen en_US en_US.UTF-8
+sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+gnome-shell-extension-tool
+sudo apt install gnome-control-center
+gnome-control-center
+sudo apt search vmware-tools
+sudo apt search vmware-tool
+sudo apt search open-vm-tool
+sudo apt install open-vm-tools open-vm-tools-desktop
+sudo -e /etc/hosts
+sudo apt update && sudo apt install curl gnupg lsb-release
+sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(source /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+export https_proxy=http://192.168.1.2:7890;export http_proxy=http://192.168.1.2:7890;export all_proxy=socks5://192.168.1.2:7890
+sudo apt upgrade
+sudo apt install ros-humble-desktop
+fastfetch
+curl -fsSL https://apt.fury.io/wez/gpg.key | sudo gpg --yes --dearmor -o /usr/share/keyrings/wezterm-fury.gpg
+echo 'deb [signed-by=/usr/share/keyrings/wezterm-fury.gpg] https://apt.fury.io/wez/ * *' | sudo tee /etc/apt/sources.list.d/wezterm.list
+nvim ~/.zshrc
+sudo apt update\
+
+sudo apt install wezterm\
+
+cd Desktop
+z ~/Downloads
+unzip MyConfig.zip
+cd .config
+ls -a
+rm -rf .config
+rm -rf .local
+rm MyConfig.zip
+rm nvim-linux64.tar.gz
+cd ~/Workspace
+rm -rf Workspace
+mkdir Workspace
+cd Workspace
+z Downloads
+unzip .config.zip
+mkdir ~/.config/wezterm
+mkdir ~/.config/yazi
+mv wezterm/* ~/.config/wezterm
+mv yazi/* ~/.config/yazi
+rm -rf wezterm
+rm -rf yazi
+wget https://github.com/sxyazi/yazi/releases/download/v0.2.5/yazi-x86_64-unknown-linux-musl.zip
+unzip yazi-x86_64-unknown-linux-musl.zip
+cd yazi-x86_64-unknown-linux-musl
+sudo mv ya /usr/local/bin/
+sudo mv yazi /usr/local/bin/
+yazi --version
+unzip wallpaper.zip
+rm -rf yazi-x86_64-unknown-linux-musl
+rm -rf yazi-x86_64-unknown-linux-musl.zip
+rm wallpaper.zip
+cd ..
+z Pictures
+mkdir Wallpaper
+mv ~/Downloads/* ~/Pictures/Wallpaper
+cd Wallpaper
+nvim appearance.lua
+ros2 run demo_node_cpp talker
+$ ros2 run demo_nodes_cpp talker\
+
+ros2 run demo_nodes_cpp talker\
+
+ros2 run demo_nodes_cpp listener
+sudo apt update
+sudo apt install ros-humble-udp-driver
+builtin cd -- /home/orange/Workspace/ROS
+cd luminoviz
+sudo apt install -y python3-pip
+sudo pip3 install rosdepc
+sudo rosdepc init
+rosdepc update
+rosdepc install -i --from-path src --rosdistro humble -y
+sudo apt install python3-colcon-ros
+colcon build
+cd Down
+z Down
+wget https://github.com/ful1e5/Bibata_Cursor/releases/download/v2.0.6/Bibata-Modern-Classic.tar.xz
+sudo tar -xvf Bibata-Modern-Classic.tar.xz -C /usr/share/icons/
+gnome-tweaks
+nvim cd ~
+cd ~
+nvim .config/zsh/alias.zsh 
+z lumino
+nvim ~/.config/zsh/alias.zsh
+reload
+ros2 run luminoviz_cnc cnc_controller_guarder
+sr
+./install/luminoviz_main/bin/luminoviz
+nvim .config/wezterm/config/bindings.lua 
+nvim .config/wezterm/config/appearance.lua 
+ssh-keygen -t rsa -b 4096 -C "Fy-0712@outlook.com"
+bat ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_rsa.pub
+sudo apt search cmake
+sudo apt install cmake
+cd src
+clear
+z luminoviz_cnc
+git remote -v
+git remote show origin
+git config --global user.name="orange"
+git config --global user.name "orange"
+git config --global user.email "Fy-0712@outlook.com"
+cd lumicnc
+z lumicnc
+z ~/Workspace/ROS/luminoviz/src/luminoviz_cnc
+git log
+z ROS
+mkdir luminoviz_test
+cd luminoviz_test
+git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/lunimoviz_common.git
+git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_peripherials.git
+ls
+git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_widget.git
+yy
+dpkg -i code_1.90.0-1717531825_amd64.deb
+sudo dpkg -i code_1.90.0-1717531825_amd64.deb
+: 1718086647:0;yy
+: 1718086696:0;git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_default_plugins.git
+: 1718086707:0;git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_common.git
+: 1718086720:0;git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_widget.git
+: 1718086748:0;git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_hcl.git
+: 1718086776:0;git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_peripherials.git
+: 1718086795:0;git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_interface.git
+: 1718086808:0;git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_cnc.git
+: 1718086825:0;git clone V
+: 1718086831:0;git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_main.git
+: 1718086855:0;ls
+: 1718086856:0;cd ..
+: 1718087059:0;colcon build
+: 1718087086:0;cd ..
+: 1718087124:0;cd luminoviz
+: 1718087125:0;ls
+: 1718087133:0;rosdepc install -i --from-path src --rosdistro humble -y
+: 1718087294:0;yy
+: 1718087306:0;z
+: 1718087379:0;clear
+: 1718087388:0;yy
+: 1718087404:0;rosdepc install -i --from-path src --rosdistro humble -y
+: 1718087412:0;rosdep install -i --from-path src --rosdistro humble -y
+: 1718087460:0;rosdepc install -i --from-path src --rosdistro humble -y
+: 1718087469:0;ls
+: 1718087481:0;cd src
+: 1718087482:0;ls
+: 1718087487:0;rosdepc install -i --from-path src --rosdistro humble -y
+: 1718087508:0;rosdepc install -i --from-path . --rosdistro humble -y
+: 1718087528:0;apt search udp_driver
+: 1718087557:0;apt search ros-humble-udp-driver
+: 1718087564:0;apt search ros-humble-mobus
+: 1718087567:0;apt search ros-humble-modbus
+: 1718087652:0;cd luminoviz_hcl
+: 1718087657:0;git checkout 
+: 1718087663:0;git checkout exp-network
+: 1718087666:0;cd ..
+: 1718087673:0;colcon build
+: 1718087780:0;ls src
+: 1718087830:0;nvim src/luminoviz_common/CMakeLists.txt
+: 1718087890:0;colcon build
+: 1718087911:0;ls src
+: 1718087967:0;cd ~
+: 1718087974:0;nvim .config/zsh/fzf.zsh 
+: 1718088014:0;reload
+: 1718088019:0;yy
+: 1718088037:0;nvim .config/zsh/fzf.zsh 
+: 1718088046:0;nvim ~/.config/zsh/fzf.zsh 
+: 1718088091:0;reload
+: 1718088097:0;nvim ~/.config/zsh/fzf.zsh 
+: 1718088123:0;reload
+: 1718088175:0;cd src
+: 1718088208:0;ls
+: 1718088211:0;cd ..
+: 1718088212:0;ls
+: 1718088215:0;rm -rf build
+: 1718088219:0;rm -rf install
+: 1718088222:0;rm -rf log
+: 1718088227:0;colcon build
+: 1718088455:0;nvim ~/.zshrc
+: 1718088491:0;nvim ~/.config/zsh/alias.zsh
+: 1718088495:0;sr
+: 1718088513:0;ros2 run luminoviz_cnc cnc_controller_guarder
+: 1718088521:0;./install/luminoviz_main/bin/luminoviz
+: 1718090020:0;colcon build
+: 1718090323:0;sr
+: 1718090325:0;./install/luminoviz_main/bin/luminoviz
+: 1718090395:0;ros2 component list
+: 1718090407:0;ros2 run luminoviz_cnc cnc_controller_guarder
+: 1718090422:0;sr
+: 1718090689:0;colcon build
+: 1718090695:0;sr
+: 1718090697:0;./install/luminoviz_main/bin/luminoviz
+: 1718091044:0;colcon build
+: 1718091049:0;clear
+: 1718091052:0;sr
+: 1718091053:0;./install/luminoviz_main/bin/luminoviz
+: 1718091266:0;sr
+: 1718091395:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
+: 1718091423:0;./install/luminoviz_main/bin/luminoviz
+: 1718091447:0;sr
+: 1718091448:0;./install/luminoviz_main/bin/luminoviz
+: 1718091718:0;ls ~/
+: 1718091720:0;ls ~/ -a
+: 1718091732:0;rm -rf ~/.luminoviz
+: 1718091741:0;./install/luminoviz_main/bin/luminoviz
+: 1718091748:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
+: 1718092341:0;colcon build
+: 1718092370:0;./install/luminoviz_main/bin/luminoviz
+: 1718092372:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
+: 1718092726:0;colcon build
+: 1718092880:0;sr
+: 1718092889:0;ros2 run luminoviz_cnc cnc_controller_guarder
+: 1718092891:0;./install/luminoviz_main/bin/luminoviz
+: 1718092908:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
+: 1718094506:0;sudo apt install cmake
+: 1718094517:0;sudo apt install qt5-base qt-creator
+: 1718094526:0;sudo apt search qt5
+: 1718094537:0;sudo apt search qt5-base
+: 1718094543:0;sudo apt search qt5-creator
+: 1718094548:0;sudo apt search qt-creator
+: 1718094552:0;sudo apt search qtcreator
+: 1718094561:0;sudo apt install qtcreator
+: 1718094677:0;sudo apt install qtbase5
+: 1718094680:0;sudo apt install qtbase5-dev
+: 1718094688:0;sudo apt install qtchooser
+: 1718094695:0;sudo apt install qt5-qmake
+: 1718094706:0;sudo apt install qtbase5-dev-tools
+: 1718094829:0;export QT_QPA_PLATFORM=wayland
+: 1718094875:0;ip ad
+: 1718094893:0;whoami
+: 1718095048:0;gnome-tweaks
+: 1718095143:0;colcon build
+: 1718095218:0;z ~
+: 1718095222:0;z DOwn
+: 1718095225:0;ls
+: 1718095227:0;ls -a
+: 1718095235:0;rm -rf .git
+: 1718095239:0;rm -rf .gitignore
+: 1718095242:0;rm -rf .gitattributes
+: 1718095243:0;ls -a
+: 1718095252:0;nvim .zshrc
+: 1718095259:0;rm -rf .zshrc
+: 1718095260:0;ls
+: 1718095264:0;rm -rf code_1.90.0-1717531825_amd64.deb
+: 1718095267:0;rm -rf Bibata-Modern-Classic.tar.xz
+: 1718095268:0;ls
+: 1718095275:0;tar -xzf CNC.tar.gz
+: 1718095276:0;ls
+: 1718095278:0;cd CNC
+: 1718095279:0;ls
+: 1718095288:0;rm -rf CNC-Server.zip
+: 1718095289:0;ls
+: 1718095306:0;mv CNC-Server ~/Workspace/QT
+: 1718095316:0;mv CNC-Server ~/Workspace/QT/CNC-Server
+: 1718095317:0;ls
+: 1718095570:0;colcon build
+: 1718095581:0;sr
+: 1718095584:0;clear
+: 1718095586:0;fastfetchg
+: 1718095587:0;fastfetch
+: 1718095588:0;clear
+: 1718095592:0;./install/luminoviz_main/bin/luminoviz
+: 1718095596:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
+: 1718095614:0;sr
+: 1718095615:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
+: 1718097324:0;colcon build
+: 1718097541:0;colcon build --packages-select luminoviz_widget
+: 1718097603:0;pip install -U colcon-common-extensions
+: 1718097632:0;colcon list
+: 1718097654:0;colcon build --packages-select luminoviz_widget
+: 1718097701:0;sudo apt install python3-colcon-common-extensions
+: 1718097714:0;colcon build --packages-select luminoviz_widget
+: 1718097844:0;ls
+: 1718097849:0;rm -rf build install log
+: 1718097851:0;ls
+: 1718097853:0;colcon build --packages-select luminoviz_widget
+: 1718097950:0;colcon build
+: 1718098053:0;sr
+: 1718098062:0;./install/luminoviz_main/bin/luminoviz
+: 1718098065:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
+: 1718098190:0;ls ~ -a
+: 1718098197:0;rm -rf ~/.luminoviz
+: 1718098200:0;./install/luminoviz_main/bin/luminoviz
+: 1718098231:0;colcon build
+: 1718098238:0;sr
+: 1718098240:0;./install/luminoviz_main/bin/luminoviz
+: 1718098268:0;colcon build
+: 1718098283:0;sr
+: 1718098285:0;./install/luminoviz_main/bin/luminoviz
+: 1718098373:0;colcon build
+: 1718098380:0;./install/luminoviz_main/bin/luminoviz
+: 1718098443:0;ls
+: 1718098447:0;rm -rf build install log
+: 1718098448:0;ls
+: 1718098451:0;colcon build
+: 1718098454:0;clear
+: 1718098597:0;rm -rf ~/.luminoviz
+: 1718098599:0;./install/luminoviz_main/bin/luminoviz
+: 1718098663:0;apt remove python3-colcon-common-extensions
+: 1718098669:0;sudo apt remove python3-colcon-common-extensions
+: 1718098676:0;colcon build
+: 1718098683:0;./install/luminoviz_main/bin/luminoviz
+: 1718098734:0;colcon build
+: 1718098742:0;sr
+: 1718098744:0;./install/luminoviz_main/bin/luminoviz
+: 1718098781:0;apt install python3-colcon-common-extensions
+: 1718098797:0;sudo apt install python3-colcon-common-extensions
+: 1718098825:0;colcon build
+: 1718098832:0;sr
+: 1718098834:0;./install/luminoviz_main/bin/luminoviz
+: 1718098871:0;colcon build
+: 1718098995:0;sr
+: 1718098996:0;./install/luminoviz_main/bin/luminoviz
+: 1718099196:0;colcon build
+: 1718099265:0;sr
+: 1718099269:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
+: 1718099273:0;./install/luminoviz_main/bin/luminoviz
+: 1718099351:0;colcon build
+: 1718099359:0;sr
+: 1718099362:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
+: 1718099364:0;sr
+: 1718099366:0;./install/luminoviz_main/bin/luminoviz
+: 1718099651:0;colcon build
+: 1718099697:0;sr
+: 1718099699:0;./install/luminoviz_main/bin/luminoviz
+: 1718099701:0;sr
+: 1718099703:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
+: 1718099960:0;colcon build
+: 1718099970:0;sr
+: 1718099971:0;./install/luminoviz_main/bin/luminoviz
+: 1718099973:0;sr
+: 1718099974:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
+: 1718100045:0;colcon build
+: 1718100054:0;sr
+: 1718100055:0;./install/luminoviz_main/bin/luminoviz
+: 1718100057:0;sr
+: 1718100058:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
+: 1718100404:0;colcon build
+: 1718100492:0;nvim .config/wezterm/config/appearance.lua 
+: 1718100503:0;nvim .config/wezterm/config/bindings.lua 
+: 1718100565:0;yy
+: 1718100575:0;sr
+: 1718100578:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
+: 1718100614:0;./install/luminoviz_main/bin/luminoviz
+: 1718100870:0;colcon build
+: 1718100883:0;sr
+: 1718100886:0;./install/luminoviz_main/bin/luminoviz
+: 1718100887:0;sr
+: 1718100889:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
+: 1718101171:0;colcon build
+: 1718101223:0;sr
+: 1718101225:0;./
+: 1718101227:0;sr
+: 1718101231:0;./install/luminoviz_main/bin/luminoviz
+: 1718101234:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
+: 1718101557:0;cd src
+: 1718101562:0;cd luminoviz_peripherials
+: 1718101565:0;git pull --no-rebase
+: 1718101657:0;colcon build
+: 1718101801:0;cd luminoviz_hcl
+: 1718101806:0;z luminoviz_hcl
+: 1718101811:0;git status
+: 1718101824:0;git checkout main
+: 1718101836:0;cd ..
+: 1718101838:0;colcon build
+: 1718102218:0;cd src/luminoviz_hcl
+: 1718102222:0;git checkout exp-network
+: 1718102314:0;cd luminoviz
+: 1718102317:0;z luminoviz
+: 1718102322:0;colcon build
+: 1718102350:0;./install/luminoviz_main/bin/luminoviz
+: 1718102371:0;sr
+: 1718102373:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
+: 1718347427:0;echo $XDG_CURRENT_DESKTOP
+: 1718347435:0;echo $XDG_SESSION_DESKTOP
+: 1718347439:0;clear
+: 1718347441:0;z
+: 1718347445:0;z lumino
+: 1718347449:0;clear
+: 1718347454:0;z ~
+: 1718347468:0;nvim .config/wezterm/config/fonts.lua 
+: 1718347487:0;z lumi
+: 1718347492:0;cd src/luminoviz_hcl
+: 1718347522:0;git checkout origin/main
+: 1718347535:0;git checkout master
+: 1718347541:0;git checkout exp-network
+: 1718347559:0;ls
+: 1718347563:0;git status
+: 1718347570:0;git diff
+: 1718347577:0;git diff main
+: 1718347586:0;clear
+: 1718353772:0;lspci 
+: 1718353808:0;lspci  | grep "VM"
+: 1718353817:0;lspci  | grep "VGA"
+: 1718353859:0;lspci -k | grep -A 2 -i "vga"
+: 1718359095:0;sudo systemctl status NetworkManager.service
+: 1718359121:0;sudo systemctl status pipewire
+: 1718359130:0;sudo systemctl status pulseaudio
+: 1718359181:0;fastfetch
+: 1718453937:0;cd .config
+: 1718453939:0;git init
+: 1718453992:0;git config --list\
+
+: 1718453998:0;clear
+: 1718454030:0;touch .gitignore
+: 1718454257:0;cd .config
+: 1718454260:0;git add.
+: 1718454265:0;git add .
+: 1718454279:0;git commit -m "ubuntu config"
+: 1718454301:0;touch README.md
+: 1718454421:0;git remote add origin git@github.com:Fy-Apple/dotfiles.git
+: 1718454454:0;git add .
+: 1718454462:0;git commit -m "ubuntu config"
+: 1718454492:0;git push origin master:ubuntu22.04
+: 1718454616:0;git remote remove origin
+: 1718454620:0;git remote
+: 1718454629:0;git remote add origin git@github.com:Fy-Apple/dotfiles.git
+: 1718454635:0;git push origin master:ubuntu22.04
+: 1718602986:0;git add .
