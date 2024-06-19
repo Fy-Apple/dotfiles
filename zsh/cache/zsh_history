@@ -590,3 +590,10 @@ proxy_on
 : 1718786072:0;git init
 : 1718786080:0;git status
 : 1718786486:0;cp .zshrc ~/.config
+: 1718786530:0;git config --global user.name "orange"
+: 1718786539:0;git config --global user.email "Fy-0712@outlook.com"
+: 1718786547:0;cd .config
+: 1718786557:0;git remote add git@github.com:Fy-Apple/dotfiles.git
+: 1718786576:0;git remote add  origin git@github.com:Fy-Apple/dotfiles.git
+: 1718786595:0;git pull origin master:archlinux
+: 1718786631:0;git push origin master:archlinux

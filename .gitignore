@@ -1,5 +1,10 @@
 *
 !.gitignore
+
+
+!fastfetch/
+!fastfetch/**
+
 !fcitx5/
 !fcitx5/conf/
 !fcitx5/conf/classicui.conf
