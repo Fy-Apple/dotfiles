@@ -1,0 +1,592 @@
+sudo pacman -Ss clash
+sudo paru -Ss clash
+sudo paru -Ss clash-premium
+pacman -Si clash
+pacman -S clash
+sudo pacman -S clash
+wget -O config.yaml "https://ntxsj.no-mad-world.club/link/lGDCjGxcQubq03tk?clash=3"
+mv config.yaml ~/.config/clash
+clash -d
+clash 
+source ~/.zshrc
+echo $https_proxy
+echo $socks_proxy
+sudo pacman -Qs wayland
+paru -Ss waybar-hyprland
+sudo timedatectl set-local-rtc 1
+nvim /etc/systemd/system/clash.service
+echo $http_proxy
+sudo systemctl status clash
+sudo nvim /etc/systemd/system/clash.service
+sudo systemctl daemon-reload
+which clash
+sudo chmod +x /usr/bin/clash
+clash
+sudo nvim /etc/environment
+Defaults env_keep += "*_proxy *_PROXY"\
+
+sudo systemctl enable clash --now
+sudo systemctl status clash.service
+sudo systemctl stop clash.service
+sudo systemctl start clash.service
+printenv
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+xprop | grep WM_CLASS
+xprop
+kitty btm
+brightnessctl
+brightnessctl -d *::kbd_backlight set +33%
+brightnessctl -d *::kbd_backlight set 33%
+brightnessctl info | grep -oP "(?<=\()\d+(?=%)" | cat
+brightnessctl info | awk -F "'" '/Device/ {print $2}'
+((($brightness + 2) / 5) * 5)
+brightnessctl set 5%-
+brightnessctl set 1%
+brightnessctl set 100%
+cat << "EOF"\
+    ./brightnesscontrol.sh <action>\
+    ...valid actions are...\
+        i -- <i>ncrease brightness [+5%]\
+        d -- <d>ecrease brightness [-5%]\
+EOF
+brightnessctl -m | grep -o '[0-9]\+%' | head -c-2
+brightnessctl set +10%
+chmod +x ~/.config/hypr/scripts/brightnesscontrol.sh
+chmod +x ~/.config/hypr/scripts/xdph.sh
+./.config/hypr/scripts/xdph.sh d
+./.config/hypr/scripts/brightnesscontrol.sh d
+sudo pacman -Si xev
+sudo pacman -S xorg-xev
+grep -i 'XF86' /usr/include/X11/keysymdef.h
+ls /usr/include/X11/keysymdef.h
+cat /usr/include/X11/keysymdef.h
+sudo pacman -S pamixer
+pamixer
+pamixer -i 5 
+pamixer -i --get-volume | cat
+pamixer -h --get-volume | cat
+pamixer -m
+pamixer -u
+xenv
+pamixer --get-volume
+toggle_mute
+pamixer --default-source -i 5
+pamixer -i 5
+pamixer --help
+pamixer -t
+pamixer -i 5 --allow-boost --set-limit 150
+chmod +x ~/.config/hypr/scripts/volumecontrol.sh
+xev
+sudo pacman -Qs pipewire pipewire-alsa pipewire-pulse pipewire-jack
+sudo pacman -Qs pipewire
+systemctl --user disable pipewire pipewire-pulse
+sudo systemctl enable pipewire pipewire-pulse
+systemctl --user enable pipewire pipewire-pulse
+systemctl --user start pipewire pipewire-pulse
+journalctl --user -xe -u pipewire
+sudo systemctl status pipewire
+sudo systemctl --user status pipewire
+sudo systemctl --user status pipewire-pulse
+systemctl --user status pipewire-pulse
+systemctl --user status pipewire-jack
+btm
+sudo pacman -S yazi
+yazi
+sudo pacman -S yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide
+z ~/Pictures
+which zoxide
+zi
+zoxide
+cd ~/Pictures
+git clone https://github.com/Fy-Apple/wallpaper.git Wallpapers
+ls ~/.ssh
+   ssh-keygen -t rsa -b 4096 -C "Fy-0712@Outlook.com"
+bat ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_rsa.pub
+git clone git@github.com:Fy-Apple/wallpaper.git Wallpapers
+git clone https://github.com/username/example.yazi.git ~/.config/yazi/flavors/example.yazi
+aply -l
+sudo pacman -Si alsa-utils
+sudo pacman -S alsa-utils
+sudo pacman -Qs sof-firmware
+sudo pacman -Qi sof-firmware
+sudo pacman -Ri sof-firmware
+sudo pacman -Rs sof-firmware
+sudo pacman -S sof-firmware
+systemctl --user status wireplumber
+systemctl --user pipewire wireplumber
+systemctl --user status pipewire
+systemctl --user status pipewire-alsa
+systemctl --user enable pipewire-alsa
+sudo pacman -Qs alsa
+nwg-looks
+systemctl --user status --now pipewire.socket
+systemctl --user status --now pipewire.service
+systemctl --user status --now pipewire-pulse.socket
+systemctl --user status --now pipewire-pulse.service
+systemctl --user status --now wireplumber.service
+sudo systemctl enable --now bluetooth.service
+cd .config
+mkdir fastfetch
+ls fastfetch
+ls fastfetch -a
+rmdir fastfetch
+git clone https://github.com/fastfetch-cli/fastfetch.git ~/.config/fastfetch
+fastfetch --config ~/.config/fastfetch/all.jsonc
+fastfetch --config ~/.config/fastfetch/btw.jsonc
+fastfetch --config ~/.config/fastfetch/examples/2.jsonc
+fastfetch --config ~/.config/fastfetch/examples/3.jsonc
+fastfetch --config ~/.config/fastfetch/examples/4.jsonc
+fastfetch --config ~/.config/fastfetch/examples/5.jsonc
+fastfetch --config ~/.config/fastfetch/examples/6.jsonc
+fastfetch --config ~/.config/fastfetch/examples/7.jsonc
+fastfetch --config ~/.config/fastfetch/examples/8.jsonc
+fastfetch --config ~/.config/fastfetch/examples/9.jsonc
+fastfetch --config ~/.config/fastfetch/examples/10.jsonc
+fastfetch --config ~/.config/fastfetch/examples/11.jsonc
+fastfetch --config ~/.config/fastfetch/examples/12.jsonc
+fastfetch --config ~/.config/fastfetch/examples/13.jsonc
+fastfetch --config ~/.config/fastfetch/examples/14.jsonc
+fastfetch --config ~/.config/fastfetch/examples/15.jsonc
+fastfetch --config ~/.config/fastfetch/examples/16.jsonc
+fastfetch --config ~/.config/fastfetch/examples/17.jsonc
+fastfetch --config ~/.config/fastfetch/examples/18.jsonc
+fastfetch --config ~/.config/fastfetch/examples/19.jsonc
+fastfetch --config ~/.config/fastfetch/examples/20.jsonc
+fastfetch --config ~/.config/fastfetch/ml4w.jsonc
+ls ~/.config/fastfetch -a
+rm -rf ~/.config/fastfetch/.git
+alsamixer
+sudo pacman -Ss dolphin
+sudo pacman -Si dolphin
+sudo pacman -S dolphin
+sudo pacman -S ffmpegthumbs 
+sudo pacman -Ss qt5-imageformats
+sudo pacman -Ss qt6-imageformats
+sudo pacman -S qt5-imageformats
+sudo pacman -S dolphin-plugins
+kcmshell6 componentchooser
+sudo pacman -R dolphin-plugins
+sudo pacman -Rs dolphin-plugins
+sudo pacman -Si ark  
+dolphin --platformtheme qt6ct
+dolphin 
+sudo pacman -Ss ark  
+sudo pacman -S ark  
+ark
+xdg-user-dirs-update
+git clone https://github.com/catppuccin/Kvantum.git dotfiles/Kvantum/themes
+echo $QT_QPA_PLATFORM
+echo $QT_IM_MODULE
+echo $QT_QPA_PLATFORMTHEME
+kvantumpreview
+sudo pacman -Rs kvantum
+sudo pacman -Rs kvantum-qt5
+sudo pacman -R kvantum-qt5
+sudo pacman -R kvantum
+sudo pacman -S kvantum
+sudo pacman -S kvantum-qt5
+git clone https://github.com/catppuccin/Kvantum.git
+sudo mkdir /usr/share/Kvantum/themes/
+mv ~/Kvantum/themes/mocha/mocha-sapphire /usr/share/Kvantum/themes/
+sudo mv ~/Kvantum/themes/mocha/mocha-sapphire /usr/share/Kvantum/themes/
+sudo mv ~/Kvantum/themes/mocha/mocha-teal /usr/share/Kvantum/
+ls /usr/share/Kvantum
+rm -rf /usr/share/Kvantum/mocha-teal
+sudo rm -rf /usr/share/Kvantum/mocha-teal
+sudo rm -rf /usr/share/Kvantum/themes
+sudo cp -r Kvantum/themes/macchiato/macchiato-mauve /usr/share/Kvantum
+ls /usr/share/Kvantum/macchiato-mauve
+ls /usr/share/Kvantum/KvYaru
+sudo pacman -S kvantum kvantum-qt5 qt5-wayland qt6-wayland qt5ct qt6ct
+sudo pacman -S nwg-look
+kvantum-manager
+sudo pacman -S papirus-icon-theme breeze-icons
+sudo pacman -S xdg-desktop-portal-gtk
+sudo pacman -S gtk4
+sudo pacman -S gtk3
+sudo pacman -S imagemagick
+imagemagick
+sudo pacman -S jq
+sudo pacman -Ss bibata-cursor-theme
+suparu -Ss bibata-cursor-theme
+paru -Ss bibata-cursor-theme
+suparu -S bibata-cursor-theme
+sudo pacman -S bibata-cursor-theme
+kvantum
+hyprctl setcursor Bibata-Modern-Ice 20
+gsettings
+gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Ice'
+sudo pacman -Ss Catppuccin-Mocha
+sudo pacman -Ss catppuccin
+paru -Ss catppuccin-gtk-theme
+paru -Ss gtk-theme
+paru -Ss tokyo-night-gtk-theme
+paru -Ss night-gtk-theme
+paru -Ss tokyonight-gtk-theme
+sudo pacman -Ss tokyonight-gtk-theme
+sudo pacman -Ss gtk-theme
+paru -S tokyonight-gtk-theme
+paru -S tokyonight-gtk-theme-git
+nwg-look
+kvantummanager
+qt5ct
+qt6ct
+\nwg-look
+dolphin
+kitty -e nmtui --class
+kitty -e nmtui 
+chmod +x ~/.config/waybar/toggle.sh
+chmod +x ~/.config/waybar/themeswitcher
+chmod +x ~/.config/waybar/themeswitcher.sh
+chmod +x ~/.config/waybar/launch.sh
+./~/.config/waybar/launch.sh
+cd ~/.config/waybar
+launch.sh
+./launch.sh
+ls -a
+nvim .themestyle.sh
+waybar -c ~/.config/waybar/themes/default/config -s ~/.config/waybar/themes/default/style.css &
+echo $color1
+echo $cursor
+echo $foreground
+waybar -c ~/.config/waybar/themes/ml4w/config -s ~/.config/waybar/themes/ml4w/light/style.css &
+waybar -c ~/.config/waybar/themes/ml4w/config -s ~/.config/waybar/themes/ml4w/black/style.css
+waybar -c ~/.config/waybar/themes/ml4w/config -s ~/.config/waybar/themes/ml4w/dark/style.css
+waybar -c ~/.config/waybar/themes/ml4w/config -s ~/.config/waybar/themes/ml4w/white/style.css
+waybar -c ~/.config/waybar/themes/ml4w/config -s ~/.config/waybar/themes/ml4w/mixed/style.css
+waybar -c ~/.config/waybar/themes/ml4w-blur/config -s ~/.config/waybar/themes/ml4w-blur/light/style.cs
+waybar -c ~/.config/waybar/themes/ml4w-blur/config -s ~/.config/waybar/themes/ml4w-blur/light/style.css
+waybar -c ~/.config/waybar/themes/ml4w-blur/config -s ~/.config/waybar/themes/ml4w-blur/white/style.css
+waybar -c ~/.config/waybar/themes/ml4w-blur-bottom/config -s ~/.config/waybar/themes/ml4w-blur-bottom/white/style.css
+waybar -c ~/.config/waybar/themes/starter/config -s ~/.config/waybar/themes/starter/style.css
+git clone https://github.com/prasanthrangan/hyprdots.git
+ cd hyprdots
+eza
+waybar -c ~/.config/waybar/themes/ml4w/config -s ~/.config/waybar/themes/ml4w/light/style.css
+wlogout
+chmod +x ~/.config/waybar/scripts/random.sh
+./.config/waybar/launch.sh
+waybar -c ~/.config/waybar/themes/Starter/config -s ~/.config/waybar/themes/Starter/style.css
+waybar -c ~/.config/waybar/themes/Starter/config
+sudo usermod -aG input orange
+bat ~/.cache/.themestyle.sh
+nm-connection-editor
+chmod +x ~/.config/hypr/scripts/random_wallpaper.sh
+hyprctl monitors
+hyprctl monitors | grep 'Monitor ' | awk '{print $2}'
+chmod +x ~/.config/hypr/scripts/wallpaper.sh
+hyprctl hyprpaper list
+%
+kitty --class .config-flating
+kitty .config-flating
+kitty --help
+kitty --class .config-floting
+hyprctl clients
+kitty --class .config-floating -e btm
+kitty --class .config-floating
+hyprctl hyprpaper
+hyprctl hyprpaper listloaded
+pkill waybar
+killall waybar
+waybar
+waybar -c ~/.config/waybar/themes/Top-blur/config -s ~/.config/waybar/themes/Top-blur/light/style.css
+waybar -c ~/.config/waybar/themes/Top-blur/config 
+./.config/waybar/scripts/random.sh
+waybar -c ~/.config/waybar/themes/Top-blur/config
+waybar -c ~/.config/waybar/themes/Top-blur/config -s ~/.config/waybar/themes/Top-blur/white/style.css
+waybar -c ~/.config/waybar/themes/Top-blur/config -s ~/.config/waybar/themes/Top-blur/colored/style.css
+chmod +x ~/.config/waybar/scripts/installupdates.sh
+chmod +x ~/.config/waybar/scripts/updates.sh
+sudo pacman -Ss pacseek
+sudo paru -Ss pacseek
+sudo pacman -Syu
+paru -S pacseek
+sudo pacseek
+pacseek
+sudo pacman -S     sudo pacman -S figlet
+    sudo pacman -S figlet
+sudo pacman -Si gum
+sudo paru -Si gum
+sudo pacman -S gum
+sudo pacman -Si wqy-zenhei
+sudo pacman -Si noto-fonts-cjk
+sudo pacman -S wqy-zenhei
+sudo pacman -S noto-fonts-cjk
+sudo pacman -S otf-font-awesome
+./.config/waybar/scripts/launch.sh
+sudo pacman -S trizen
+trizen
+trizen -q
+sudo timedatectl set-time
+timedatectl set-time
+timedatectl set-timezone Asia/Shanghai
+timedatectl set-ntp
+timedatectl set-ntp 1
+gum
+tldr gum
+sudo pacman -S tldr
+fastfetch
+hwclock --systohc
+sudo hwclock --systohc
+timedatectl status
+zgrep VIRTIO /proc/config.gz
+lspci -nn | grep -i vga
+lspci -nn | grep -i audio
+lspci -nnk | grep -i vga -A 3
+cd Workspace
+mkdir sh
+cd sh
+touch test.sh
+chmod +x test.sh
+nvim test.sh
+uname -a
+sudo nvim /etc/modprobe.d/vifo.conf
+sudo dmesg | grep -e DMAR -e IOMMU\
+
+cd ~/Workspace/sh
+./test.sh
+grep -E --color=auto 'vmx|svm|0xc0f' /proc/cpuinfo
+zgrep CONFIG_KVM /proc/config.gz
+lsmod | grep kvm
+lsmod | grep virtio
+nvim ~/.cache/.themestyle.sh
+sudo systemctl restart libvirtd.service
+sudo systemctl status bluetooth.service
+blueman-manager
+sudo pacman -Si qemu-full
+sudo pacman -S qemu-full
+sudo pacman -S qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat dmidecode
+sudo pacman -S ebtables iptables
+sudo pacman -S libguestfs\
+
+sudo systemctl enable libvirtd.service
+sudo systemctl start libvirtd.service
+systemctl status libvirtd.service
+sudo usermod -a -G libvirt $(whoami)
+newgrp libvirt
+sudo pacman -S qbittorrent
+sudo pacman -Qs libvirtd
+sudo pacman -Qs libvir
+lspci -nn
+lscpu
+sudo grep --color -E "vmx|svm" /proc/cpuinfo\
+
+sudo lsmod | grep kvm\
+
+$ LC_ALL=C lscpu | grep Virtualization
+LC_ALL=C lscpu | grep Virtualization
+sudo systemctl status libvirtd.service
+sudo nvim /etc/libvirt/libvirtd.conf
+id orange
+sudo pacman -Ss ovmf
+qbittorrent
+grep -E --color '(vmx|svm)' /proc/cpuinfo
+egrep -c '(vmx|svm)' /proc/cpuinfo
+kvm-ok
+qemu-img create -f qcow2 /var/lib/libvirt/images/ubuntu22.qcow2 64G
+sudo qemu-img create -f qcow2 /var/lib/libvirt/images/ubuntu22.qcow2 64G
+sudo ls /var/lib/libvirt/images
+   sudo lsof /dev/nvidia*
+sudo /etc/modprobe.d/vfio.conf
+sudo nvim /etc/modprobe.d/vfio.conf
+lspci -nn | grep NVIDIA
+   lspci -nn | grep -i nvidia
+nvim /etc/modprobe.d/blacklist.conf
+sudo nvim /etc/modprobe.d/blacklist.conf
+./Workspace/sh/test.sh
+lspci -nnk -d 10de:13c2
+lspci -nnk Kernel
+lspci -nnk
+lspci -nnk | grep "nvidia"
+lspci -nnk | grep "VGA"
+lspci -nnk | grep "vifo-pci"
+lspci -nnk | grep "vifo"
+sudo dmesg
+sudo rm /etc/modprobe.d/vfio.conf
+sudo rm /etc/modprobe.d/blacklist.conf
+nvim /etc/default/grub
+sudo mkinitcpio -P
+sudo reboot
+dmesg | grep -e DMAR -e IOMMU
+sudo dmesg | grep -e DMAR -e IOMMU
+sudo dmesg | grep -i vfio
+lspci -nnk -d 10de:27a0
+lscpu | grep -E 'vmx|svm'
+ls -l /dev/dri
+sudo usermod -aG video orange
+sudo systemctl restart libvirtd
+virsh list --all
+glxinfo | grep "OpenGL"
+sudo journalctl -xe -u libvirtd
+sudo nvim /etc/default/grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo nivm /etc/mkinitcpio.conf
+sudo nvim /etc/mkinitcpio.conf
+sudo shutdown -h now
+sudo virsh net-start default
+sudo virsh net-autostart default
+lspci -k | grep -A 3 -E "(VGA|3D)"
+sudo pacman -Qs nvidia
+sudo pacman -S libepoxy libglvnd mesa
+sudo journalctl -u libvirtd
+   qemu-img create -f qcow2 /home/orange/VM/DISK/ubuntu22.qcow2 80G
+clear
+qemu-system-x86_64 -m 1000 --enable-kvm -display gtk,gl=on -vga virtio -cpu host -smp 2 -drive file=/root/kk.img,if=virtio -usb -usbdevice tablet
+sudo qemu-system-x86_64 -m 1000 --enable-kvm -display gtk,gl=on -vga virtio -cpu host -smp 2 -drive file=/root/kk.img,if=virtio -usb -usbdevice tablet
+ip ad
+which code
+which fzf
+sudo pacman -S starship
+starship preset tokyo-night -o ~/.config/starship.toml
+fzf
+exec zsh
+whoami
+pwd
+z ~/Downloads
+unzip vladikoff-archon-e3c9b322402a.zip
+waydroid init
+sudo waydroid init
+sudo nvim /var/lib/waydroid/waydroid_base.prop
+waydroid shell
+sudo waydroid shell
+waydroid app launch org.lineageos.etar
+sudo waydroid app install ~/Downloads/jocy.apk
+waydroid app install ~/Downloads/jocy.apk
+waydroid init -s GAPPS -f
+sudo waydroid init -s GAPPS -f
+systemctl enable --now waydroid-container
+waydroid show-full-ui
+waydroid session start
+cd Downloads
+waydroid app install jocy.apk
+nvidia-smi
+waydroid app launch com.android.traceur
+waydroid app launch com.android.vending
+waydroid app list
+waydroid app launch org.lineageos.jelly
+systemctl status clash.service
+virt-manager
+la
+ls
+lt
+cd Repo
+z
+z Workspace
+z Repo
+z ~/Documents
+yy
+ll
+nmtui
+hyprctl monitors all
+nvim ~/.zshrc
+nvim /etc/environment
+Hyprland
+proxy_off
+proxy_on
+: 1718611179:0;Hyprland
+: 1718611628:0;.cache/paru/clone/wechat-uos-bwrap/open.sh 
+: 1718611753:0;hyprctl clients
+: 1718611856:0;Hyr
+: 1718611860:0;Hyprland
+: 1718611921:0;wechat-uos-qt
+: 1718612270:0;sudo pacman -S qtcreator qt5-tools
+: 1718612306:0;sudo pacman -S cmake
+: 1718612396:0;qtcreator
+: 1718612469:0;hyprctl clients
+: 1718612622:0;tar -zxvf CNC.tar.gz
+: 1718612739:0;qtcre
+: 1718612746:0;qtcreator
+: 1718612831:0;hyprctl clients
+: 1718613022:0;virt-manager&
+: 1718613150:0;ip ad
+: 1718617369:0;export QT_SCALE_FACTOR=1.5
+: 1718617380:0;export QT_SCREEN_SCALE_FACTORS=1.5
+: 1718617385:0;wechat-uos-qt
+: 1718617392:0;export QT_SCREEN_SCALE_FACTORS=1
+: 1718617397:0;export QT_SCALE_FACTOR=1
+: 1718617400:0;wechat-uos-qt
+: 1718617834:0;Hyprland
+: 1718617919:0;virt-manager&
+: 1718618506:0;clear
+: 1718618512:0;Hyprland
+: 1718619132:0;virt-manager&
+: 1718707999:0;Hyprland
+: 1718780628:0;sudo rm -fr /var/cache/pypr /usr/local/bin/pypr ; rm ~/.config/hypr/pyprland.toml
+: 1718780646:0;cd Downloads
+: 1718780648:0;curl https://raw.githubusercontent.com/hyprland-community/pyprland/main/scripts/get-pypr | sh
+: 1718780650:0;ls
+: 1718780690:0;touch ~/.config/hyprpyprland.toml
+: 1718780704:0;rm ~/.config/hyprpyprland.toml
+: 1718780710:0;touch ~/.config/hypr/pyprland.toml
+: 1718780716:0;nvim ~/.config/hypr/pyprland.toml
+: 1718780777:0;Hyprland
+: 1718781545:0;pypr expose
+: 1718782061:0;paru -S anyrun-git
+: 1718782188:0;anyrun
+: 1718782783:0;pypr fetch_client_menu
+: 1718782832:0;pypr gbar
+: 1718782839:0;pypr gBar
+: 1718782854:0;pypr gbar restart
+: 1718783106:0;mkdir -p ~/.config/anyrun/plugins
+: 1718783240:0;anyrun
+: 1718783929:0;ls -a
+: 1718783937:0;ls
+: 1718783944:0;la
+: 1718783947:0;ll
+: 1718783952:0;cd $'\006'$'\201'\`_$'\026'\]
+: 1718783953:0;ls
+: 1718783956:0;cd crashpad
+: 1718783957:0;ls
+: 1718783976:0;cd ~
+: 1718783977:0;ls
+: 1718783980:0;cd 0$'\020'V$'\216'$'\023'\]
+: 1718783981:0;ls
+: 1718783983:0;cd ..
+: 1718783992:0;rm $'\006'$'\201'\`_$'\026'\]
+: 1718783996:0;rm $'\006'$'\201'\`_$'\026'\] -rf
+: 1718784000:0;rm $'\340'@S\]B_ -rf
+: 1718784005:0;rm 0$'\020'V$'\216'$'\023'\] -rf
+: 1718784006:0;ls
+: 1718784196:0;anyrun
+: 1718784528:0;git clone https://github.com/Kirottu/anyrun.git
+: 1718784535:0;cd anyrun
+: 1718784588:0;sudo pacman -S base-devel git rustup gtk-layer-shell gtk3 pango cairo gdk-pixbuf2 glib2
+: 1718784604:0;cargo build --release
+: 1718784662:0;cargo install --path anyrun/
+: 1718784710:0;mkdir -p ~/.config/anyrun/plugins
+: 1718784717:0;cp target/release/*.so ~/.config/anyrun/plugins
+: 1718784724:0;cp examples/config.ron ~/.config/anyrun/config.ron
+: 1718784751:0;anyrun
+: 1718784759:0;ls
+: 1718784762:0;cd anyrun
+: 1718784762:0;ls
+: 1718784768:0;cd anyrun
+: 1718784769:0;ls
+: 1718784885:0;find ~/.cargo/bin -name anyrun
+: 1718784914:0;ls ~/.cargo/bin
+: 1718785023:0;sudo mv ~/.cargo/bin/anyrun /usr/local/bin/
+: 1718785031:0;ls /usr/local/bin/anyrun
+: 1718785039:0;anyrun
+: 1718785101:0;anyrun --help
+: 1718785120:0;anyrun --plugins 
+: 1718785127:0;anyrun --plugins applications
+: 1718785154:0;anyrun --plugins ~/.config/anyrun/plugins/libapplications.so
+: 1718785177:0;anyrun --plugins ~/.config/anyrun/plugins/libshell.so
+: 1718785196:0;anyrun --plugins ~/.config/anyrun/plugins/librink.so
+: 1718785236:0;anyrun --plugins ~/.config/anyrun/plugins/libshell.so
+: 1718785241:0;anyrun --plugins ~/.config/anyrun/plugins/libapplications.so
+: 1718785470:0;anyrun --plugins ~/.config/anyrun/plugins/libsymbols.so
+: 1718785492:0;Hyprland
+: 1718785516:0;anyrun --plugins ~/.config/anyrun/plugins/libsymbols.so
+: 1718785549:0;anyrun --plugins ~/.config/anyrun/plugins/librandr.so
+: 1718785631:0;anyrun --plugins ~/.config/anyrun/plugins/libwebsearch.so
+: 1718785821:0;anyrun -show
+: 1718785824:0;anyrun --show
+: 1718785829:0;anyrun --help
+: 1718785921:0;Hyprland
+: 1718786068:0;cd .config
+: 1718786069:0;ls
+: 1718786072:0;git init
+: 1718786080:0;git status
+: 1718786486:0;cp .zshrc ~/.config
