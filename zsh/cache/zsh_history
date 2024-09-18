@@ -14,15 +14,9 @@ sudo apt search open-vm-tool
 sudo apt install open-vm-tools open-vm-tools-desktop
 sudo -e /etc/hosts
 sudo apt update && sudo apt install curl gnupg lsb-release
-sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(source /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 export https_proxy=http://192.168.1.2:7890;export http_proxy=http://192.168.1.2:7890;export all_proxy=socks5://192.168.1.2:7890
-sudo apt upgrade
-sudo apt install ros-humble-desktop
-fastfetch
 curl -fsSL https://apt.fury.io/wez/gpg.key | sudo gpg --yes --dearmor -o /usr/share/keyrings/wezterm-fury.gpg
 echo 'deb [signed-by=/usr/share/keyrings/wezterm-fury.gpg] https://apt.fury.io/wez/ * *' | sudo tee /etc/apt/sources.list.d/wezterm.list
-nvim ~/.zshrc
 sudo apt update\
 
 sudo apt install wezterm\
@@ -30,8 +24,6 @@ sudo apt install wezterm\
 cd Desktop
 z ~/Downloads
 unzip MyConfig.zip
-cd .config
-ls -a
 rm -rf .config
 rm -rf .local
 rm MyConfig.zip
@@ -39,7 +31,6 @@ rm nvim-linux64.tar.gz
 cd ~/Workspace
 rm -rf Workspace
 mkdir Workspace
-cd Workspace
 z Downloads
 unzip .config.zip
 mkdir ~/.config/wezterm
@@ -58,7 +49,6 @@ unzip wallpaper.zip
 rm -rf yazi-x86_64-unknown-linux-musl
 rm -rf yazi-x86_64-unknown-linux-musl.zip
 rm wallpaper.zip
-cd ..
 z Pictures
 mkdir Wallpaper
 mv ~/Downloads/* ~/Pictures/Wallpaper
@@ -70,40 +60,17 @@ $ ros2 run demo_nodes_cpp talker\
 ros2 run demo_nodes_cpp talker\
 
 ros2 run demo_nodes_cpp listener
-sudo apt update
 sudo apt install ros-humble-udp-driver
 builtin cd -- /home/orange/Workspace/ROS
-cd luminoviz
-sudo apt install -y python3-pip
-sudo pip3 install rosdepc
-sudo rosdepc init
-rosdepc update
-rosdepc install -i --from-path src --rosdistro humble -y
-sudo apt install python3-colcon-ros
-colcon build
 cd Down
 z Down
 wget https://github.com/ful1e5/Bibata_Cursor/releases/download/v2.0.6/Bibata-Modern-Classic.tar.xz
 sudo tar -xvf Bibata-Modern-Classic.tar.xz -C /usr/share/icons/
-gnome-tweaks
 nvim cd ~
-cd ~
 nvim .config/zsh/alias.zsh 
-z lumino
-nvim ~/.config/zsh/alias.zsh
-reload
-ros2 run luminoviz_cnc cnc_controller_guarder
-sr
-./install/luminoviz_main/bin/luminoviz
-nvim .config/wezterm/config/bindings.lua 
-nvim .config/wezterm/config/appearance.lua 
 ssh-keygen -t rsa -b 4096 -C "Fy-0712@outlook.com"
 bat ~/.ssh/id_rsa.pub
-cat ~/.ssh/id_rsa.pub
 sudo apt search cmake
-sudo apt install cmake
-cd src
-clear
 z luminoviz_cnc
 git remote -v
 git remote show origin
@@ -114,313 +81,551 @@ cd lumicnc
 z lumicnc
 z ~/Workspace/ROS/luminoviz/src/luminoviz_cnc
 git log
-z ROS
 mkdir luminoviz_test
 cd luminoviz_test
 git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/lunimoviz_common.git
-git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_peripherials.git
-ls
-git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_widget.git
-yy
 dpkg -i code_1.90.0-1717531825_amd64.deb
 sudo dpkg -i code_1.90.0-1717531825_amd64.deb
-: 1718086647:0;yy
-: 1718086696:0;git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_default_plugins.git
-: 1718086707:0;git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_common.git
-: 1718086720:0;git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_widget.git
-: 1718086748:0;git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_hcl.git
-: 1718086776:0;git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_peripherials.git
-: 1718086795:0;git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_interface.git
-: 1718086808:0;git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_cnc.git
-: 1718086825:0;git clone V
-: 1718086831:0;git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_main.git
-: 1718086855:0;ls
-: 1718086856:0;cd ..
-: 1718087059:0;colcon build
-: 1718087086:0;cd ..
-: 1718087124:0;cd luminoviz
-: 1718087125:0;ls
-: 1718087133:0;rosdepc install -i --from-path src --rosdistro humble -y
-: 1718087294:0;yy
-: 1718087306:0;z
-: 1718087379:0;clear
-: 1718087388:0;yy
-: 1718087404:0;rosdepc install -i --from-path src --rosdistro humble -y
-: 1718087412:0;rosdep install -i --from-path src --rosdistro humble -y
-: 1718087460:0;rosdepc install -i --from-path src --rosdistro humble -y
-: 1718087469:0;ls
-: 1718087481:0;cd src
-: 1718087482:0;ls
-: 1718087487:0;rosdepc install -i --from-path src --rosdistro humble -y
-: 1718087508:0;rosdepc install -i --from-path . --rosdistro humble -y
-: 1718087528:0;apt search udp_driver
-: 1718087557:0;apt search ros-humble-udp-driver
-: 1718087564:0;apt search ros-humble-mobus
-: 1718087567:0;apt search ros-humble-modbus
-: 1718087652:0;cd luminoviz_hcl
-: 1718087657:0;git checkout 
-: 1718087663:0;git checkout exp-network
-: 1718087666:0;cd ..
-: 1718087673:0;colcon build
-: 1718087780:0;ls src
-: 1718087830:0;nvim src/luminoviz_common/CMakeLists.txt
-: 1718087890:0;colcon build
-: 1718087911:0;ls src
-: 1718087967:0;cd ~
-: 1718087974:0;nvim .config/zsh/fzf.zsh 
-: 1718088014:0;reload
-: 1718088019:0;yy
-: 1718088037:0;nvim .config/zsh/fzf.zsh 
-: 1718088046:0;nvim ~/.config/zsh/fzf.zsh 
-: 1718088091:0;reload
-: 1718088097:0;nvim ~/.config/zsh/fzf.zsh 
-: 1718088123:0;reload
-: 1718088175:0;cd src
-: 1718088208:0;ls
-: 1718088211:0;cd ..
-: 1718088212:0;ls
-: 1718088215:0;rm -rf build
-: 1718088219:0;rm -rf install
-: 1718088222:0;rm -rf log
-: 1718088227:0;colcon build
-: 1718088455:0;nvim ~/.zshrc
-: 1718088491:0;nvim ~/.config/zsh/alias.zsh
-: 1718088495:0;sr
-: 1718088513:0;ros2 run luminoviz_cnc cnc_controller_guarder
-: 1718088521:0;./install/luminoviz_main/bin/luminoviz
-: 1718090020:0;colcon build
-: 1718090323:0;sr
-: 1718090325:0;./install/luminoviz_main/bin/luminoviz
-: 1718090395:0;ros2 component list
-: 1718090407:0;ros2 run luminoviz_cnc cnc_controller_guarder
-: 1718090422:0;sr
-: 1718090689:0;colcon build
-: 1718090695:0;sr
-: 1718090697:0;./install/luminoviz_main/bin/luminoviz
-: 1718091044:0;colcon build
-: 1718091049:0;clear
-: 1718091052:0;sr
-: 1718091053:0;./install/luminoviz_main/bin/luminoviz
-: 1718091266:0;sr
-: 1718091395:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
-: 1718091423:0;./install/luminoviz_main/bin/luminoviz
-: 1718091447:0;sr
-: 1718091448:0;./install/luminoviz_main/bin/luminoviz
-: 1718091718:0;ls ~/
-: 1718091720:0;ls ~/ -a
-: 1718091732:0;rm -rf ~/.luminoviz
-: 1718091741:0;./install/luminoviz_main/bin/luminoviz
-: 1718091748:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
-: 1718092341:0;colcon build
-: 1718092370:0;./install/luminoviz_main/bin/luminoviz
-: 1718092372:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
-: 1718092726:0;colcon build
-: 1718092880:0;sr
-: 1718092889:0;ros2 run luminoviz_cnc cnc_controller_guarder
-: 1718092891:0;./install/luminoviz_main/bin/luminoviz
-: 1718092908:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
-: 1718094506:0;sudo apt install cmake
-: 1718094517:0;sudo apt install qt5-base qt-creator
-: 1718094526:0;sudo apt search qt5
-: 1718094537:0;sudo apt search qt5-base
-: 1718094543:0;sudo apt search qt5-creator
-: 1718094548:0;sudo apt search qt-creator
-: 1718094552:0;sudo apt search qtcreator
-: 1718094561:0;sudo apt install qtcreator
-: 1718094677:0;sudo apt install qtbase5
-: 1718094680:0;sudo apt install qtbase5-dev
-: 1718094688:0;sudo apt install qtchooser
-: 1718094695:0;sudo apt install qt5-qmake
-: 1718094706:0;sudo apt install qtbase5-dev-tools
-: 1718094829:0;export QT_QPA_PLATFORM=wayland
-: 1718094875:0;ip ad
-: 1718094893:0;whoami
-: 1718095048:0;gnome-tweaks
-: 1718095143:0;colcon build
-: 1718095218:0;z ~
-: 1718095222:0;z DOwn
-: 1718095225:0;ls
-: 1718095227:0;ls -a
-: 1718095235:0;rm -rf .git
-: 1718095239:0;rm -rf .gitignore
-: 1718095242:0;rm -rf .gitattributes
-: 1718095243:0;ls -a
-: 1718095252:0;nvim .zshrc
-: 1718095259:0;rm -rf .zshrc
-: 1718095260:0;ls
-: 1718095264:0;rm -rf code_1.90.0-1717531825_amd64.deb
-: 1718095267:0;rm -rf Bibata-Modern-Classic.tar.xz
-: 1718095268:0;ls
-: 1718095275:0;tar -xzf CNC.tar.gz
-: 1718095276:0;ls
-: 1718095278:0;cd CNC
-: 1718095279:0;ls
-: 1718095288:0;rm -rf CNC-Server.zip
-: 1718095289:0;ls
-: 1718095306:0;mv CNC-Server ~/Workspace/QT
-: 1718095316:0;mv CNC-Server ~/Workspace/QT/CNC-Server
-: 1718095317:0;ls
-: 1718095570:0;colcon build
-: 1718095581:0;sr
-: 1718095584:0;clear
-: 1718095586:0;fastfetchg
-: 1718095587:0;fastfetch
-: 1718095588:0;clear
-: 1718095592:0;./install/luminoviz_main/bin/luminoviz
-: 1718095596:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
-: 1718095614:0;sr
-: 1718095615:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
-: 1718097324:0;colcon build
-: 1718097541:0;colcon build --packages-select luminoviz_widget
-: 1718097603:0;pip install -U colcon-common-extensions
-: 1718097632:0;colcon list
-: 1718097654:0;colcon build --packages-select luminoviz_widget
-: 1718097701:0;sudo apt install python3-colcon-common-extensions
-: 1718097714:0;colcon build --packages-select luminoviz_widget
-: 1718097844:0;ls
-: 1718097849:0;rm -rf build install log
-: 1718097851:0;ls
-: 1718097853:0;colcon build --packages-select luminoviz_widget
-: 1718097950:0;colcon build
-: 1718098053:0;sr
-: 1718098062:0;./install/luminoviz_main/bin/luminoviz
-: 1718098065:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
-: 1718098190:0;ls ~ -a
-: 1718098197:0;rm -rf ~/.luminoviz
-: 1718098200:0;./install/luminoviz_main/bin/luminoviz
-: 1718098231:0;colcon build
-: 1718098238:0;sr
-: 1718098240:0;./install/luminoviz_main/bin/luminoviz
-: 1718098268:0;colcon build
-: 1718098283:0;sr
-: 1718098285:0;./install/luminoviz_main/bin/luminoviz
-: 1718098373:0;colcon build
-: 1718098380:0;./install/luminoviz_main/bin/luminoviz
-: 1718098443:0;ls
-: 1718098447:0;rm -rf build install log
-: 1718098448:0;ls
-: 1718098451:0;colcon build
-: 1718098454:0;clear
-: 1718098597:0;rm -rf ~/.luminoviz
-: 1718098599:0;./install/luminoviz_main/bin/luminoviz
-: 1718098663:0;apt remove python3-colcon-common-extensions
-: 1718098669:0;sudo apt remove python3-colcon-common-extensions
-: 1718098676:0;colcon build
-: 1718098683:0;./install/luminoviz_main/bin/luminoviz
-: 1718098734:0;colcon build
-: 1718098742:0;sr
-: 1718098744:0;./install/luminoviz_main/bin/luminoviz
-: 1718098781:0;apt install python3-colcon-common-extensions
-: 1718098797:0;sudo apt install python3-colcon-common-extensions
-: 1718098825:0;colcon build
-: 1718098832:0;sr
-: 1718098834:0;./install/luminoviz_main/bin/luminoviz
-: 1718098871:0;colcon build
-: 1718098995:0;sr
-: 1718098996:0;./install/luminoviz_main/bin/luminoviz
-: 1718099196:0;colcon build
-: 1718099265:0;sr
-: 1718099269:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
-: 1718099273:0;./install/luminoviz_main/bin/luminoviz
-: 1718099351:0;colcon build
-: 1718099359:0;sr
-: 1718099362:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
-: 1718099364:0;sr
-: 1718099366:0;./install/luminoviz_main/bin/luminoviz
-: 1718099651:0;colcon build
-: 1718099697:0;sr
-: 1718099699:0;./install/luminoviz_main/bin/luminoviz
-: 1718099701:0;sr
-: 1718099703:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
-: 1718099960:0;colcon build
-: 1718099970:0;sr
-: 1718099971:0;./install/luminoviz_main/bin/luminoviz
-: 1718099973:0;sr
-: 1718099974:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
-: 1718100045:0;colcon build
-: 1718100054:0;sr
-: 1718100055:0;./install/luminoviz_main/bin/luminoviz
-: 1718100057:0;sr
-: 1718100058:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
-: 1718100404:0;colcon build
-: 1718100492:0;nvim .config/wezterm/config/appearance.lua 
-: 1718100503:0;nvim .config/wezterm/config/bindings.lua 
-: 1718100565:0;yy
-: 1718100575:0;sr
-: 1718100578:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
-: 1718100614:0;./install/luminoviz_main/bin/luminoviz
-: 1718100870:0;colcon build
-: 1718100883:0;sr
-: 1718100886:0;./install/luminoviz_main/bin/luminoviz
-: 1718100887:0;sr
-: 1718100889:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
-: 1718101171:0;colcon build
-: 1718101223:0;sr
-: 1718101225:0;./
-: 1718101227:0;sr
-: 1718101231:0;./install/luminoviz_main/bin/luminoviz
-: 1718101234:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
-: 1718101557:0;cd src
-: 1718101562:0;cd luminoviz_peripherials
-: 1718101565:0;git pull --no-rebase
-: 1718101657:0;colcon build
-: 1718101801:0;cd luminoviz_hcl
-: 1718101806:0;z luminoviz_hcl
-: 1718101811:0;git status
-: 1718101824:0;git checkout main
-: 1718101836:0;cd ..
-: 1718101838:0;colcon build
-: 1718102218:0;cd src/luminoviz_hcl
-: 1718102222:0;git checkout exp-network
-: 1718102314:0;cd luminoviz
-: 1718102317:0;z luminoviz
-: 1718102322:0;colcon build
-: 1718102350:0;./install/luminoviz_main/bin/luminoviz
-: 1718102371:0;sr
-: 1718102373:0;ros2 launch luminoviz_peripherials launch_dgcontroller.py
-: 1718347427:0;echo $XDG_CURRENT_DESKTOP
-: 1718347435:0;echo $XDG_SESSION_DESKTOP
-: 1718347439:0;clear
-: 1718347441:0;z
-: 1718347445:0;z lumino
-: 1718347449:0;clear
-: 1718347454:0;z ~
-: 1718347468:0;nvim .config/wezterm/config/fonts.lua 
-: 1718347487:0;z lumi
-: 1718347492:0;cd src/luminoviz_hcl
-: 1718347522:0;git checkout origin/main
-: 1718347535:0;git checkout master
-: 1718347541:0;git checkout exp-network
-: 1718347559:0;ls
-: 1718347563:0;git status
-: 1718347570:0;git diff
-: 1718347577:0;git diff main
-: 1718347586:0;clear
-: 1718353772:0;lspci 
-: 1718353808:0;lspci  | grep "VM"
-: 1718353817:0;lspci  | grep "VGA"
-: 1718353859:0;lspci -k | grep -A 2 -i "vga"
-: 1718359095:0;sudo systemctl status NetworkManager.service
-: 1718359121:0;sudo systemctl status pipewire
-: 1718359130:0;sudo systemctl status pulseaudio
-: 1718359181:0;fastfetch
-: 1718453937:0;cd .config
-: 1718453939:0;git init
-: 1718453992:0;git config --list\
+git clone V
+rosdep install -i --from-path src --rosdistro humble -y
+rosdepc install -i --from-path . --rosdistro humble -y
+apt search udp_driver
+apt search ros-humble-udp-driver
+apt search ros-humble-mobus
+apt search ros-humble-modbus
+git checkout 
+nvim src/luminoviz_common/CMakeLists.txt
+ls src
+cd ~
+nvim .config/zsh/fzf.zsh 
+nvim ~/.config/zsh/fzf.zsh 
+rm -rf build
+rm -rf install
+rm -rf log
+nvim ~/.zshrc
+nvim ~/.config/zsh/alias.zsh
+ros2 component list
+ls ~/
+ls ~/ -a
+ros2 run luminoviz_cnc cnc_controller_guarder
+sudo apt install qt5-base qt-creator
+sudo apt search qt5
+sudo apt search qt5-base
+sudo apt search qt5-creator
+sudo apt search qt-creator
+sudo apt search qtcreator
+sudo apt install qtcreator
+sudo apt install qtbase5
+sudo apt install qtbase5-dev
+sudo apt install qtchooser
+sudo apt install qt5-qmake
+sudo apt install qtbase5-dev-tools
+export QT_QPA_PLATFORM=wayland
+ip ad
+whoami
+gnome-tweaks
+z DOwn
+rm -rf .git
+rm -rf .gitignore
+rm -rf .gitattributes
+ls -a
+rm -rf .zshrc
+rm -rf code_1.90.0-1717531825_amd64.deb
+rm -rf Bibata-Modern-Classic.tar.xz
+tar -xzf CNC.tar.gz
+cd CNC
+rm -rf CNC-Server.zip
+mv CNC-Server ~/Workspace/QT
+mv CNC-Server ~/Workspace/QT/CNC-Server
+fastfetchg
+pip install -U colcon-common-extensions
+colcon list
+colcon build --packages-select luminoviz_widget
+ls ~ -a
+rm -rf ~/.luminoviz
+apt remove python3-colcon-common-extensions
+sudo apt remove python3-colcon-common-extensions
+apt install python3-colcon-common-extensions
+nvim .config/wezterm/config/appearance.lua 
+nvim .config/wezterm/config/bindings.lua 
+yy
+./
+cd luminoviz_peripherials
+git pull --no-rebase
+cd luminoviz_hcl
+z luminoviz_hcl
+git checkout main
+z luminoviz
+echo $XDG_CURRENT_DESKTOP
+echo $XDG_SESSION_DESKTOP
+z
+z lumino
+z ~
+nvim .config/wezterm/config/fonts.lua 
+cd src/luminoviz_hcl
+git checkout origin/main
+git checkout master
+git checkout exp-network
+git status
+git diff
+git diff main
+lspci 
+lspci  | grep "VM"
+lspci  | grep "VGA"
+lspci -k | grep -A 2 -i "vga"
+sudo systemctl status NetworkManager.service
+sudo systemctl status pipewire
+sudo systemctl status pulseaudio
+fastfetch
+git init
+git config --list\
 
-: 1718453998:0;clear
-: 1718454030:0;touch .gitignore
-: 1718454257:0;cd .config
-: 1718454260:0;git add.
-: 1718454265:0;git add .
-: 1718454279:0;git commit -m "ubuntu config"
-: 1718454301:0;touch README.md
-: 1718454421:0;git remote add origin git@github.com:Fy-Apple/dotfiles.git
-: 1718454454:0;git add .
-: 1718454462:0;git commit -m "ubuntu config"
-: 1718454492:0;git push origin master:ubuntu22.04
-: 1718454616:0;git remote remove origin
-: 1718454620:0;git remote
-: 1718454629:0;git remote add origin git@github.com:Fy-Apple/dotfiles.git
-: 1718454635:0;git push origin master:ubuntu22.04
-: 1718602986:0;git add .
+touch .gitignore
+cd .config
+git add.
+touch README.md
+git commit -m "ubuntu config"
+git remote remove origin
+git remote
+git remote add origin git@github.com:Fy-Apple/dotfiles.git
+git push origin master:ubuntu22.04
+git add .
+cd ~/.config
+mkdir clash
+cd clash
+wget -O config.yaml "https://ms66a.no-mad-world.club/link/lGDCjGxcQubq03tk?clash=3"
+ping baidu.com
+cat .zshrc
+nvim .zshrc
+curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+cd zoxide-0.9.4-x86_64-unknown-linux-musl
+sudo mv zoxide /usr/bin/zoxide
+zoxide
+cd fzf-0.54.0-linux_amd64
+sudo mv fzf /usr/bin/fzf
+mv eza /usr/bin/eza
+sudo mv eza /usr/bin/eza
+sudo mv fd /usr/bin/fd
+cd ripgrep-14.1.0-x86_64-unknown-linux-musl
+sudo mv rg /usr/bin/
+rg
+fzf
+sudo mv starship /usr/bin
+sudo mv starship /usr/bin/
+sudo update-alternatives --config x-terminal-emulator
+sudo nvim /etc/hosts
+sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(source /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+sudo apt install ros-humble-desktop
+sudo apt install -y python3-pip
+sudo pip3 install rosdepc
+sudo rosdepc init
+rosdepc update
+cd ~/Workspace/ROS
+mkdir luminoviz
+cd luminoviz
+mkdir src
+cat ~/.ssh/id_rsa.pub
+sudo apt install python3-colcon-ros
+sudo apt search python3-colcon-ros
+sudo apt search python3-colcon
+sudo apt install python3-colcon-common-extensions
+sudo apt install g++
+sudo apt install cmake
+sudo apt install libmodbus-dev
+reload
+export ROS_LOG_DIR=~/my_logs
+ros2 run rqt_console rqt_console
+cd lumi
+z lumni
+fcitx5
+git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_common.git
+git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_widget.git
+git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_cnc.git
+git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_default_plugins.git
+git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_main.git
+git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_peripherials.git
+rm -rf luminoviz_peripherials_handwheel
+sudo apt-get install ros-humble-asio-cmake-module\
+
+ros2 launch luminoviz_peripherials launch_dgcontroller.py
+grep -r "TestDemoPage"
+grep -r "TestDemoPage" ./src/luminoviz_common/
+grep -r "cnc/cnc/Cnc" ./src/luminoviz_common/
+;s
+rm -rf build install log
+colcon build --symlink-install\
+
+colcon build --symlink-install
+z lu
+colcon build --packages-select luminoviz_cnc
+cd Workspace
+git clone https://github.com/qt-creator/qt-creator.git
+where gcc
+git switch 4.2
+mkdir QTbuild
+mkdir QTCreator
+mkdir LLVM
+cd QTbuild
+cd QT
+LS
+pwd
+cmake -DCMAKE_BUILD_TYPE=Debug -G Ninja "-DCMAKE_PREFIX_PATH=/home/apple/Workspace/QTbuild/QTCreator;/home/apple/Workspace/QTbuild/LLVM" /home/apple/Workspace/QT/qt-creator\
+cmake --build .
+qmake -v
+rm -rf *
+git checkout .
+git switch master
+qmake ../../QT/qt-creator/qtcreator.pro
+qmake ../qt-creator/qtcreator.qbs
+cd qt-creator
+git switch 4.15
+cd build
+z build
+cd QT/qtcreator_build
+sudo apt search libqt5script5-dev
+cd Workspace/QT
+cd qtcreator_build
+cd bin
+chmod +x qtcreator
+./qtcreator
+z QT
+cd qt-creator_build
+qmake ../qt-creator/qtcreator.pro
+make
+z ROS
+colcon build 
+rm -rf build/ install/ log/
+cd RosControl
+sudo apt update
+sudo apt upgrade
+sudo apt-get install ros-noetic-ros-control ros-noetic-ros-controllers
+sudo apt install ros-noetic-ros-control ros-noetic-ros-controllers
+sudo apt search ros-control
+z lumi
+sudo apt install ros-rolling-ros2-control ros-rolling-ros2-controllers
+sudo apt search ros-humble-ros2-control
+sudo apt install ros-humble-ros2-control*
+sudo apt install ros-humble-ros2-control
+sudo apt install ros-humble-ros2-controller ros-humble-gazebo-ros2-control
+colcon build --packages-select luminoviz_peripherials_handwheel
+ros2 run luminoviz_peripherials_handwheel
+bash
+clear
+./install/luminoviz_main/bin/luminoviz
+ping 192.168.1.253
+where clash
+ros2 launch luminoviz_peripherials_handwheel wheel.hand.launch
+ros2 launch luminoviz_peripherials_handwheel wheel.hand.lauch.py
+git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_peripherials_handwheel.git
+git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_interface.git
+git clone git@codeup.aliyun.com:634fcca91ec5942103db7402/luminojet/luminoviz_hcl.git
+cd Ros
+z ros
+sudo apt install ros-humble-gazebo-ros2-controllers
+sudo apt install ros-humble-gazebo-ros2-controller
+sudo apt install ros-humble-gazebo-ros2-control
+sudo apt-get install ros-humble-ros2-control*
+sudo apt-get install ros-humble-ros2-control
+sudo apt-get install ros-humble-ros2-controller
+rosdepc install -i --from-path src --rosdistro humble -y
+sudo apt install lib-serial-driver
+sudo apt install ros-humble-serial-driver
+mkdir -p ~/ros2_ws/src
+cd ~/ros2_ws/src
+git clone https://github.com/ros-controls/ros2_control_demos
+cd ~/ros2_ws/
+vcs import src < src/ros2_control_demos/ros2_control_demos.$ROS_DISTRO.repos
+rosdep install --from-paths src --ignore-src -r -y
+ros2 launch ros2_control_demo_example_1 view_robot.launch.py
+ros2 run turtlesim turtlesim_node
+source install/setup.sh
+z Ris
+cd src
+ls
+source install/setup.zsh
+z Ros
+cd ..
+cd RosControl_handwheel
+ros2 launch luminoviz_peripherials_handwheel wheel.hand.launch.py
+sr
+colcon build
+ros2 launch luminoviz_peripherials_handwheel launch.py
+rosdep update --rosdistro=$ROS_DISTRO
+sudo apt-get update
+sudo rosdep install --from-paths ./ -i -y --rosdistro ${ROS_DISTRO}
+sudo rosdepc install --from-paths ./ -i -y --rosdistro ${ROS_DISTRO}
+rosdep update
+: 1726119758:0;sr
+: 1726119769:0;ros2 launch ros2_control_demo_example_1 view_robot.launch.py
+: 1726119799:0;cd ros2_ws
+: 1726119803:0;ros2 launch ros2_control_demo_example_1 view_robot.launch.py
+: 1726119824:0;colcon build
+: 1726119924:0;sudo apt-get update
+: 1726119938:0;sudo apt-get upgrade
+: 1726120070:0;colcon build
+: 1726120091:0;cd ..
+: 1726120092:0;ls
+: 1726120098:0;rm -rf ros2_ws
+: 1726120144:0;mkdir -p ~/ros2_ws/src
+: 1726120151:0;cd ~/ros2_ws/src
+: 1726120160:0;git clone https://github.com/ros-controls/ros2_control_demos
+: 1726120169:0;cd ~/ros2_ws/
+: 1726120180:0;vcs import src < src/ros2_control_demos/ros2_control_demos.$ROS_DISTRO.repos
+: 1726120194:0;sudo apt search vcs
+: 1726120209:0;rosdep update
+: 1726120223:0;rosdep update --rosdistro=$ROS_DISTRO
+: 1726120233:0;sudo apt-get update
+: 1726120244:0;rosdep install --from-paths src --ignore-src -r -y
+: 1726120303:0;. /opt/ros/${ROS_DISTRO}/setup.sh
+: 1726120305:0;. /opt/ros/${ROS_DISTRO}/setup.zssh
+: 1726120307:0;. /opt/ros/${ROS_DISTRO}/setup.zsh
+: 1726120317:0;colcon build --symlink-install
+: 1726120404:0;ros2 pkg list | grep controller_manager
+: 1726120412:0;ros2 pkg list | grep ros2_control
+: 1726120423:0;sudo apt-get update
+: 1726120429:0;sudo apt-get upgrade ros-humble-ros2-control ros-humble-controller-manager
+: 1726120453:0;colcon build --symlink-install --cmake-clean-cache\
+
+: 1726120459:0;rosdep install --from-paths src --ignore-src -r -y\
+
+: 1726120511:0;sudo apt-get install ros-humble-gz-ros2-control
+: 1726120518:0;apt-cache search gz-ros2-control
+: 1726120937:0;sudo apt install ros-humble-ros2-control
+: 1726120947:0;sudo apt install ros-humble-ros2-controllers
+: 1726120976:0;colcon build --symlink-install --cmake-clean-cache\
+
+: 1726121163:0;cd ~/ros2_ws/
+: 1726121164:0;colcon build --symlink-install --cmake-clean-cache\
+
+: 1726121268:0;sudo apt install fcitx5 fcitx5-chinese-addons fcitx5-frontend-gtk4
+: 1726121322:0;sudo apt install fcitx5-frontend-gtk3
+: 1726121324:0;sudo apt install fcitx5-frontend-gtk2
+: 1726121344:0;sudo apt install fcitx5-frontend-qt5
+: 1726121349:0;fcitx5
+: 1726121367:0;fcitx5-configtool
+: 1726121532:0;gnome-tweaks
+: 1726121711:0;apt -y install firefox -esr-l10n-zh-cn
+: 1726121715:0;sudo apt -y install firefox -esr-l10n-zh-cn
+: 1726121724:0;sudo apt install firefox-esr-l10n-zh-cn
+: 1726121728:0;sudo apt install firefox
+: 1726121733:0;sudo apt search firefox
+: 1726122091:0;clear
+: 1726122098:0;sudo apt uninstall
+: 1726122144:0;sudo apt remove fcitx5-gtk2
+: 1726122159:0;sudo apt remove fcitx5-frontend-gtk2
+: 1726122261:0;sudo apt install chromium-browser
+: 1726122332:0;chromium-browser --version
+: 1726122381:0;fcitx5-configtool
+: 1726122520:0;cd ros2_ws
+: 1726122525:0;colcon build --symlink-install
+: 1726122654:0;clear
+: 1726122660:0;cd ..
+: 1726122662:0;rm -rf ros2_ws
+: 1726122674:0;mkdir -p ~/ros2_ws/src
+: 1726122681:0;cd ~/ros2_ws/src
+: 1726122694:0;git clone https://github.com/ros-controls/ros2_control_demos -b humble
+: 1726122701:0;cd ~/ros2_ws/
+: 1726122709:0;rosdep update --rosdistro=$ROS_DISTRO
+: 1726122727:0;sudo apt-get upd
+: 1726122731:0;sudo apt-get update
+: 1726122819:0;sudo rosdep install --from-paths ./ -i -y --rosdistro ${ROS_DISTRO}
+: 1726122824:0;sudo rosdepc install --from-paths ./ -i -y --rosdistro ${ROS_DISTRO}
+: 1726122831:0;rosdep update
+: 1726122847:0;sudo rosdepc install --from-paths ./ -i -y --rosdistro ${ROS_DISTRO}
+: 1726122852:0;rosdepc update
+: 1726122859:0;sudo rosdepc install --from-paths ./ -i -y --rosdistro ${ROS_DISTRO}
+: 1726122866:0;sudo rosdep install --from-paths ./ -i -y --rosdistro ${ROS_DISTRO}
+: 1726122873:0;rosdep update
+: 1726122885:0;sudo rosdep install --from-paths ./ -i -y --rosdistro ${ROS_DISTRO}
+: 1726122893:0;rosdep update
+: 1726122904:0;rosdep update --rosdistro=$ROS_DISTRO
+: 1726122915:0;sudo rosdep install --from-paths ./ -i -y --rosdistro ${ROS_DISTRO}
+: 1726122930:0;. /opt/ros/${ROS_DISTRO}/setup.zsh
+: 1726122932:0;. /opt/ros/${ROS_DISTRO}/setup.sh
+: 1726122941:0;colcon build --merge-install
+: 1726122985:0;clear
+: 1726122987:0;sr
+: 1726123009:0;ros2 run joint_state_publisher_gui joint_state_publisher_gui
+: 1726123014:0;sr
+: 1726123039:0;rviz2 -d src/ros2_control_demos/example_1/description/rviz/rrbot.rviz
+: 1726123084:0;rviz
+: 1726123110:0;ros2 launch ros2_control_demo_example_1 view_robot.launch.py
+: 1726123115:0;cd ~/ros2_ws/
+: 1726123118:0;ros2 launch ros2_control_demo_example_1 view_robot.launch.py
+: 1726123127:0;ls
+: 1726123128:0;cd src
+: 1726123131:0;cd ..
+: 1726123132:0;sr
+: 1726123134:0;ros2 launch ros2_control_demo_example_1 view_robot.launch.py
+: 1726123192:0;sudo apt upgrade ros-humble-rviz2
+: 1726123210:0;ros2 control list_hardware_interfaces
+: 1726123259:0;ros2 control list_controllers
+: 1726123342:0;ros2 launch ros2_control_demo_example_1 view_robot.launch.py
+: 1726123379:0;ros2 launch ros2_control_demo_example_1 test_forward_position_controller.launch.py
+: 1726123382:0;sr
+: 1726123383:0;ros2 launch ros2_control_demo_example_1 test_forward_position_controller.launch.py
+: 1726123597:0;export QT_QPA_PLATFORM=xcb
+: 1726123602:0;ros2 launch ros2_control_demo_example_1 test_forward_position_controller.launch.py
+: 1726123611:0;ros2 launch ros2_control_demo_example_1 view_robot.launch.py
+: 1726123699:0;export LIBGL_ALWAYS_SOFTWARE=1
+: 1726123701:0;ros2 launch ros2_control_demo_example_1 view_robot.launch.py
+: 1726124013:0;cd ros2_ws
+: 1726124017:0;sr
+: 1726124021:0;ros2 launch ros2_control_demo_example_1 view_robot.launch.py
+: 1726124036:0;ros2 launch ros2_control_demo_example_1 test_forward_position_controller.launch.py
+: 1726124211:0;ros2 launch ros2_control_demo_example_1 view_robot.launch.py
+: 1726124217:0;ros2 launch ros2_control_demo_example_1 test_forward_position_controller.launch.py
+: 1726124227:0;ros2 control list_controllers
+: 1726124274:0;ros2 node list
+: 1726124309:0;cd  ..
+: 1726124314:0;cd Workspace
+: 1726124321:0;cd ROS
+: 1726124322:0;ls
+: 1726124328:0;cd RosControl_handwheel
+: 1726124336:0;sr
+: 1726124337:0;sre
+: 1726124339:0;sr
+: 1726124363:0;ros2 launch luminoviz_peripherials_handwheel wheel.hand.launch.py
+: 1726124366:0;sr
+: 1726124377:0;cd  ..
+: 1726124387:0;cd Workspace/ROS/RosControl_handwheel
+: 1726124398:0;cd RosControl_handwheel
+: 1726124405:0;z RosControl_handwheel
+: 1726124409:0;sr
+: 1726124414:0;ros2 launch luminoviz_peripherials_handwheel wheel.hand.launch.py
+: 1726124433:0;ros2 launch luminoviz_peripherials_handwheel launch.py
+: 1726124442:0;ros2 control list_controllers
+: 1726124453:0;ros2 node list
+: 1726127275:0;sudo apt-get install ros-humble-controller-manager
+: 1726128196:0;ros2 pkg create --build-type ament_cmake lamp_control_demo
+: 1726128201:0;ls
+: 1726128206:0;cd lamp_control_demo
+: 1726128207:0;ls
+: 1726128210:0;cd //
+: 1726128212:0;cd ..
+: 1726128251:0;ros2 pkg create --build-type ament_cmake lamp_control_demo
+: 1726128734:0;ls
+: 1726128763:0;ros2_control_setup-hardware-interface-package lamp_controller
+: 1726129456:0;ros2_control_setup-hardware-interface-package
+: 1726129463:0;sudo apt install ros2_control_setup-hardware-interface-package
+: 1726129469:0;sr
+: 1726129518:0;ros2_control_setup-hardware-interface-package FILE_NAME [CLASS_NAME]\
+
+: 1726129569:0;ros2 control list_controllers\
+
+: 1726129792:0;git clone https://github.com/WMGIII/bbot_demo.git
+: 1726129916:0;git clone https://github.com/StoglRobotics/ros_team_workspace.git
+: 1726129954:0;source ros_team_workspace/setup.bash
+: 1726129962:0;cd ros_team_workspace
+: 1726129963:0;source ros_team_workspace/setup.bash
+: 1726129971:0;ls
+: 1726129987:0;source setup.bash
+: 1726130002:0;setup-auto-sourcing 
+: 1726130317:0;cd RIS
+: 1726130322:0;z Ros
+: 1726130323:0;ls
+: 1726130324:0;cd ..
+: 1726130324:0;ls
+: 1726130326:0;cd Workspace
+: 1726130329:0;cd ROS
+: 1726130330:0;ls
+: 1726130337:0;cd lamp_ws
+: 1726130338:0;ls
+: 1726130340:0;cd ..
+: 1726130354:0;ls
+: 1726130357:0;cd bbot_demo
+: 1726130361:0;colcon build
+: 1726130384:0;ros2 launch bbot_description bbot.launch.py
+: 1726130399:0;source install/setup.zsh
+: 1726130400:0;ros2 launch bbot_description bbot.launch.py
+: 1726130497:0;rivz2
+: 1726130500:0;rviz2
+: 1726130513:0;export QT_QPA_PLATFORM=xcb rviz2
+: 1726130518:0;export QT_QPA_PLATFORM=xcb
+: 1726130520:0;rviz2
+: 1726130529:0;export QT_QPA_PLATFORM=xcb && rviz2
+: 1726130624:0;rviz2
+: 1726130668:0;ros2 launch bbot_description bbot.launch.py
+: 1726131817:0;ros2 run controller_manager
+: 1726131825:0;ros2 run controller_manager spawner.py
+: 1726131830:0;ros2 run controller_manager spawner.py -h
+: 1726211679:0;cd Workspace/ROS/lamp_ws
+: 1726212111:0;colcon build
+: 1726212241:0;rm -rf build/ install/ log/
+: 1726212243:0;colcon build
+: 1726212533:0;rm -rf build/ install/ log/
+: 1726212534:0;colcon build
+: 1726212614:0;rm -rf build/ install/ log/
+: 1726212615:0;colcon build
+: 1726212876:0;rm -rf build/ install/ log/
+: 1726212877:0;colcon build
+: 1726213032:0;apt list --installed | grep lifecycle-msgs
+: 1726213075:0;colcon build
+: 1726213209:0;sr
+: 1726213233:0;source /opt/ros/humble/setup.bash
+: 1726213252:0;source /opt/ros/humble/setup.zsh
+: 1726213256:0;colcon build
+: 1726213472:0;source /opt/ros/humble/setup.zsh
+: 1726213476:0;rm -rf build/ install/ log/
+: 1726213477:0;source /opt/ros/humble/setup.zsh
+: 1726213478:0;colcon build
+: 1726213752:0;rm -rf build/ install/ log/
+: 1726213755:0;colcon build
+: 1726213792:0;rosdep install --from-paths src --ignore-src -r -y\
+
+: 1726213803:0;rosdepc install --from-paths src --ignore-src -r -y\
+
+: 1726213834:0;colcon build
+: 1726213880:0;locate lifecycle_msgs/msg/state.hpp\
+
+: 1726213893:0;sudo apt install locate
+: 1726213900:0;locate lifecycle_msgs/msg/state.hpp\
+
+: 1726213908:0;locate lifecycle_msgs/msg/statse.hpp
+: 1726213936:0;sudo apt install ros-humble-lifecycle-msgs
+: 1726213963:0;source /opt/ros/humble/setup.bash
+: 1726213970:0;source /opt/ros/humble/setup.zsh
+: 1726213978:0;source ~/Workspace/ROS/lamp_ws/install/setup.zsh
+: 1726213985:0;echo $ROS_PACKAGE_PATH\
+
+: 1726213993:0;find /opt/ros/humble/ -name state.hpp
+: 1726214046:0;colcon build
+: 1726214073:0;sudo apt install ros-humble-control-msgs
+: 1726214080:0;find /opt/ros/humble/ -name interface_value.hpp
+: 1726214106:0;colcon build
+: 1726214157:0;find /opt/ros/humble/ -name controller_interface.hpp\
+
+: 1726214189:0;colcon build
+: 1726214331:0;sudo apt install ros-humble-class-loader\
+
+: 1726214337:0;find /opt/ros/humble/ -name class_loader.hpp\
+
+: 1726214371:0;colcon build
+: 1726214556:0;cd ..
+: 1726214563:0;cd RosControl_handwheel
+: 1726214569:0;colcon build
+: 1726214721:0;ros2 pkg create --build-type ament_cmake lamp_control_demo
+: 1726215841:0;cd ..
+: 1726215844:0;cd RosControl
+: 1726215847:0;colcon build
+: 1726217018:0;z Ros
+: 1726217026:0;cd RosControl
+: 1726217028:0;colcon build
+: 1726217429:0;cd RosControl
+: 1726217431:0;colcon build
+: 1726217485:0;rm -rf build/ install/ log/
+: 1726217487:0;colcon build
+: 1726217570:0;ros2 launch lamp_control_demo lamp.launch.pt
+: 1726217572:0;ros2 launch lamp_control_demo lamp.launch.py
+: 1726217581:0;sr
+: 1726217586:0;colcon build
+: 1726217588:0;ros2 launch lamp_control_demo lamp.launch.py
+: 1726217627:0;colcon build
+: 1726217630:0;ros2 launch lamp_control_demo lamp.launch.py
+: 1726217676:0;colcon build
+: 1726217775:0;clear
+: 1726217777:0;colcon build
+: 1726636862:0;ros2 control list_controllers
+: 1726636936:0;cd Workspace/Repo/dotfiles
+: 1726636939:0;ls

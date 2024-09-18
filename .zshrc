@@ -2,7 +2,6 @@ eval "$(starship init zsh)"
 
 
 # --- 全局初始化 ---
-export https_proxy=http://192.168.1.2:7890;export http_proxy=http://192.168.1.2:7890;export all_proxy=socks5://192.168.1.2:7890
 eval "$(dircolors -b)"
 
 
